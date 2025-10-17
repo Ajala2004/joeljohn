@@ -1,6 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
+import { FaReact,FaPalette } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
@@ -35,12 +35,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Started Graphics Design Journey",
+    title: "Senior Graphic Designer at Country Links",
     location: "Nigeria",
     description:
-      "I began my creative journey learning the basics of graphic design — exploring colors, typography, and visual storytelling.",
+      "I began as an apprentice from 2019 to 2021, where I was rigorously trained in layout, color, and typography. After years of hands-on experience, I became a Senior Graphic Designer, leading a creative team and delivering quality designs to over 500 satisfied clients.",
     icon: React.createElement(LuGraduationCap),
-    date: "2020",
+    date: "2019 - Present",
   },
   {
     title: "Freelance Graphics Designer",
@@ -51,39 +51,39 @@ export const experiencesData = [
     date: "2021 - 2023",
   },
   {
-    title: "Lead Designer at FroshX",
-    location: "Remote",
+    title: "Founder & Lead Designer at Primez Visualz",
+    location: "Nigeria",
     description:
-      "Currently designing under FroshX — creating brand identities, marketing visuals, and digital artworks that stand out. I’m open to collaborations and design projects worldwide.",
-    icon: React.createElement(FaReact),
-    date: "2023 - Present",
+      "I founded Primez Visualz in 2024 — a design brand focused on creativity, excellence, and client satisfaction. I’ve created 100+ flyers, posters, banners, and ad designs for clients across digital platforms, managing communications and revisions to ensure every project aligns perfectly with each brand’s identity.",
+    icon: React.createElement(FaPalette),
+    date: "2024 - Present",
   },
 ] as const;
+
 
 
 export const projectsData = [
   {
-    title: "CorpComment",
-    description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
-  },
-  {
-    title: "rmtDev",
-    description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    title: "Creative Showcase",
+    description: "A collection of my graphic design works — from branding to promotional visuals, each crafted with creativity and precision.",
+    tags: ["Logo Design", "Branding", "Flyers", "Social Media"],
+    images: [
+      "/1.jpg",
+      "/2.jpg",
+      "/3.jpg",
+      "/4.jpg",
+      "/5.jpg",
+      "/6.jpg",
+      "/7.jpg",
+      "/8.jpg",
+      "/9.jpg",
+      "/10.jpg",
+      "/11.jpg",
+      "/12.jpg",
+    ],
   },
 ] as const;
+
 
 export const skillsData = [
   "Adobe Photoshop",
