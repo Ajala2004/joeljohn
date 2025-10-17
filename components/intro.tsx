@@ -1,4 +1,4 @@
-"use client";
+ "use client";
 
 import Image from "next/image";
 import React from "react";
@@ -22,21 +22,19 @@ export default function Intro() {
     >
       <div className="flex items-center justify-center">
         <div className="relative">
+          
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
+            transition={{ type: "tween", duration: 0.2 }}
           >
             <Image
               src="/joel.jpg"
               alt="Joel John portrait"
-              width="192"
-              height="192"
-              quality="95"
-              priority={true}
+              width={192}
+              height={192}
+              quality={95}
+              priority
               className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
@@ -45,12 +43,7 @@ export default function Intro() {
             className="absolute bottom-0 right-0 text-4xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "spring",
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
+            transition={{ type: "spring", stiffness: 125, delay: 0.1, duration: 0.7 }}
           >
             🎨
           </motion.span>
@@ -62,20 +55,17 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Joel John.</span> I'm a{" "}
-        <span className="font-bold">creative graphics designer</span> passionate
-        about bringing ideas to life through{" "}
-        <span className="italic">visual storytelling</span>. I specialize in{" "}
-        <span className="underline">branding, digital art, and UI design</span>.
+        <span className="font-bold">Hi, I'm Joel John.</span> CEO of{" "}
+        <span className="font-bold">Primez Visualz</span>, passionate about creating
+        <span className="italic"> visually stunning designs</span> that tell stories
+        and elevate brands.
       </motion.h1>
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        transition={{ delay: 0.1 }}
       >
         <Link
           href="#contact"
@@ -100,7 +90,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://www.linkedin.com/in/primezvisualz001?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          href="https://www.linkedin.com/in/primezvisualz001"
           target="_blank"
         >
           <BsLinkedin />
